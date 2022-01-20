@@ -1,14 +1,23 @@
 # Estimating-potting-probability-in-billiards
 
-## Motivation, coming up with the idea, and collecting the data.
+## Background and motivation
 
-I was first introduced to pool in my first year of university. I lived in a residential college which had a pool table, and it soon became a routine to play pool with my friends every day after dinner. I quickly fell in love with the game, and started spending more and more time at the pool table. One day I noticed that there was a blackboard in the room, and it was placed at just the right height for taking a video with my phone. From then on I decided to record myself every practice session so that I could improve my technique and track my improvement. 
+I was first introduced to pool in my first year of university. I lived in a residential college which had a pool table, and it soon became a routine to play pool with my friends every day after dinner. I quickly fell in love with the game, and started spending more and more time at the pool table. One day I noticed that there was a blackboard in the room, and it was placed at just the right height for taking a video with my phone. From then on I recorded myself every practice session in order to improve my technique and track my improvement. 
 
-Fast forward 3 years, I finally graduated with a mathematics degree and was looking forward to working in data science. But I quickly realized that although I had taken many data science related courses in university, my resume was pretty bare when it came to practical experience such as internships. I decided that I would make up for it by creating a data science portfolio and filling it with solid projects. I wanted my first project to be a complete end to end project. I wanted it to be a project involving some of my favourite areas of machine learning, and also wanted to relate it to my hobbies if possible. I wanted to find or collect by myself data that had not been analyzed before. I spent over a week brainstorming and coming up with many different ideas, but coming up with an interesting project was harder than I had thought... And then one day as I was looking at some old pictures, it hit me. Over the years, I had accumulated over 700 minutes of pool footage, and it had all been saved automatically and uploaded to the cloud...
+Fast forward 3 years, I finally graduated with a mathematics degree and was looking forward to working in data science. But I quickly realized that although I had taken many data science related courses in university, my resume was pretty bare when it came to practical experience such as internships. I decided that I'd make up for it by creating a solid data science portfolio. I wanted my first outside-of-uni project to be a complete end to end project. I wanted it to be a project involving some of my favourite areas of machine learning, but also wanted to relate it to my hobbies if possible. I wanted to find or collect by myself data that had not been analyzed before. I spent over a week brainstorming and coming up with many different ideas, but coming up with an interesting project idea was harder than I had thought... And then one day as I was looking through some old pictures, it hit me. Over the years, I had saved over 150 videos of pool footage, and it had all been saved automatically and uploaded to the cloud. It was the perfect data set, and I quickly came up with a project idea.
 
-## Data POOL IMAGE CLASSIFICATION PROJECT
+# The raw data and the project idea
 
-Research questions:
+The idea that immediately came to mind was to try and build a model that could take in a particular table position as input, and then estimate the probability of making a shot from that position. At first, it seemed like a straightforward image classification project, but I realized that this problem had some unique  that textbook 
+
+Every video recording, I followed the exact same procedures:
+1. Set up the balls with the triangle in their designated spot with no special ball arrangements except that the black ball be in the center.
+2. The goal is to sink all 15 balls in as few shots as possible.
+3. The black ball must be potted last, and striking the black ball first when there are other balls remaining is illegal.
+4. If the white b
+
+
+## The project: Research questions
 
 * How well can a convolutional neural network classify images of pool positions (taken right before the player hits the cue ball) into successful and unsuccessful pots via supervised learning with a data set of approximately 2000 images?
 * How can we tweak the CNN architecture to get better results? (Perhaps even surpass human performance?)
@@ -16,11 +25,12 @@ Research questions:
 * Can we write a program to predict which pocket the player is aiming for?
 * Can we generate predictions for where the cue ball or the object ball will end up?
 
-## The data
 
+## The raw data
 
+I quickly thought of a few research questions, but first 
 
-Data gathering process:
+This was my data gathering process:
 
 1.Open google photos and type in “pool”
 2.Select a video, making sure that it is not already in the “pool images in data set” album.
@@ -32,6 +42,11 @@ Data gathering process:
 8.After running through the video, add it to the “pool images in data set” album.
 9.Save the word documents as “Web page” and all the pictures will automatically be saved into    
  a file!!!
+ 
+ ![](images/Pot49.png)
+
+
+
 
 
 
