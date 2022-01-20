@@ -1,2 +1,8 @@
 # Estimating-potting-probability-in-billiards
-Training a convolutional neural network (CNN) to estimate the probability of making a pot (shooting a ball into one of the pockets) given an image taken right before shooting.
+
+## Motivation, coming up with the idea, and collecting the data.
+
+I was first introduced to pool when I was a first year at university. I lived in a residential college which had a pool table, and it soon became a daily routine to play pool with my friends after having dinner in the dining hall. I quickly fell in love with the game, and started spending more and more time at the pool table. One day I noticed that there was a blackboard in the room, and it was placed at just the right height for taking a video with my phone. From then on I decided to record myself every practice session so that I could improve my technique and track my improvement. 
+
+Fast forward 3 years, I finally graduated with a mathematics degree and was looking forward to working in data science. But I quickly realized that although I had taken many data science related courses in university, my resume was pretty bare when it came to practical experience such as internships. I decided that I would make up for it by creating a data science portfolio and filling it with solid projects. I wanted my first project to be a complete end to end project. I wanted it to be a project involving some of my favourite areas of machine learning, and also wanted to relate it to my hobbies if possible. I wanted to find or collect by myself data that had not been analyzed before. I spent over a week brainstorming and coming up with many different ideas, but coming up with an interesting project was harder than I had thought... And then one day as I was looking at some old pictures, it hit me. Over the years, I had accumulated over 700 minutes of pool footage, and it had all been saved automatically and uploaded to the cloud...
+
