@@ -1,4 +1,13 @@
-# Estimating-potting-probability-in-billiards
+# Estimating Potting Probability in Billiards Using Convolutional Neural Networks
+
+<p float="left">
+  <img src="https://github.com/Kaiaysez/Portfolio/blob/main/images/11%25%20blue.png" width="400">
+  <img src="https://github.com/Kaiaysez/Portfolio/blob/main/images/33%25.png" width="400"> 
+</p>
+<p float="left">
+  <img src="https://github.com/Kaiaysez/Portfolio/blob/main/images/65%25%20Red.png" width="400">
+  <img src="https://github.com/Kaiaysez/Portfolio/blob/main/images/95%25%20Darkblue.png" width="400"> 
+</p>
 
 ## Background and motivation
 
@@ -73,5 +82,5 @@ A CNN should have no problems detecting these objects. But for this particular c
 To be honest, the low predictive power of local features seems like an insurmountable problem. However, trying to look at it in a more optimistic light, there are some silver linings:
 
 * It is possible that the convolutional layers might be able to pick out the key objects, and that the dense layer might be able to find some global heuristics that have good predictive power. For example, it might learn that when the cue ball is far from the other balls, there is a low chance of potting, or that if all the balls are close to the rails, there is a low chance of potting.
-* The images are all taken from the same angle, and we are not concerned with attempting to build a model which generalizes to images taken at other angles. This means slightly lower model complexity.
+* The images are all taken from the same angle, and for now we are not concerned with attempting to build a model which generalizes to images taken at other angles. This means slightly lower model complexity.
 * There is a lot of “useless” information in the picture. Every pixel that is not one of the key objects is wasting computational power and making the problem unnecessarily complex. If there were a way to remove all the “fluff” so that only the positions of the key objects remain, then we might improve our chances. Perhaps implementing some extreme form of down sampling?
