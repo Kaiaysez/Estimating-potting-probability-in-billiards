@@ -77,8 +77,6 @@ A CNN should have no problems detecting these objects. But for this particular c
 
 ## The good news:
 
-To be honest, the low predictive power of local features is a very difficult problem. However, below is a bit of good news:
-
 * Designing a CNN architecture that prioritizes increasing the receptive field size of neurons (especially in the deeper layers) and at the same time not allowing the parameter space to grow too large might work, but a lot of experimentation and reading will be required.
 * It is possible that the convolutional layers might be able to pick out the key objects, and that the dense layer might be able to find some global heuristics that have good predictive power. For example, it might learn that when the cue ball is far from the other balls, there is a low chance of potting, or that if all the balls are close to the rails, there is a low chance of potting.
 * The images are all taken from the same angle, and for now we are not concerned with attempting to build a model which generalizes to images taken at other angles. This means slightly lower variation in the data.
