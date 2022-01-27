@@ -15,7 +15,7 @@
 
 ## Goal
 
-The goal is to build a model that can take in an image of particular situation on the pool table (right before the shot is made) as input, and then estimate the probability of making the shot from that position. At first glance, it seemed like a straightforward image classification project, but I realized that this problem had some very unique challenges that textbook image classification problems do not have.
+The goal is to build a model that can take in an image of particular situation on the pool table (right before the shot is made) as input, and then estimate the probability of making the shot from that position. At first glance, it seemed like a straightforward image classification project, but I quickly realized that this problem has some very unique challenges that most textbook image classification problems do not have.
 
 
 ## The raw data and the project idea
