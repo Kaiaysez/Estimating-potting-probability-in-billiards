@@ -69,13 +69,13 @@ For this problem, clearly the most important objects in the images are:
 
 A CNN should have no problems detecting these objects. But for this particular classification problem, detecting these objects does us no good. It is the relative position of these objects with respect to each other that determines the success rate of the shot. 
 
-## Challenges:
+## The bad news:
 
 * Local features have almost no predictive power. This is the key difference between this problem, and say classifying cats and dogs. With cats and dogs, local features such as ear shapes have extremely high predictive power. In this case however, ALL of the predictive power comes from the global features, namely the relative position of the key objects.
 * The CNN has no understanding of the physics and dynamics of how these objects interact with each other. 
 * The training data might not be sufficient.
 
-## Good news:
+## The good news:
 
 To be honest, the low predictive power of local features is a very difficult problem. However, below is a bit of good news:
 
