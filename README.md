@@ -9,7 +9,7 @@
   <img src="https://github.com/Kaiaysez/Portfolio/blob/main/images/95%25%20Darkblue.png" width="400"> 
 </p>
 
-# NOTE: This project is a work in progress and most of what is written below is just for documenting my thoughts. I will upload a python/jupyter notebook file containing the model and visualize the results when the project is closer to completion.
+# NOTE: This project is a work in progress and most of what is written below is just for documenting my thoughts. I will upload a python/jupyter notebook file containing the model and visualize the results when the project is closer to completion. I will also remove some of the less interesting information to make for an easier read.
 
 ## Background and motivation
 
