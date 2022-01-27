@@ -75,7 +75,7 @@ A CNN should have no problems detecting these objects. But for this particular c
 * The CNN has no understanding of the physics and dynamics of how these objects interact with each other. 
 * The training data might not be sufficient.
 
-## Some ideas on how the challenges might be overcome:
+## Good news:
 
 To be honest, the low predictive power of local features is a very difficult problem. However, below is a bit of good news:
 
