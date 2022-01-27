@@ -33,7 +33,7 @@ Every video recording, I followed the exact same procedures:
 2. The goal is to sink all 15 balls in as few shots as possible.
 3. The black ball must be potted last, and striking the black ball first when there are other balls remaining is illegal.
 
-Therefore, every shot is an attempt to pot a ball, with no restrictions on which ball to pot except that the black ball must go last.
+**Therefore, every shot is an attempt to pot a ball, with no restrictions on which ball to pot except that the black ball must go last.**
 
 
 ## Data gathering process
@@ -61,13 +61,13 @@ Therefore, every shot is an attempt to pot a ball, with no restrictions on which
 
 We know that convolutional neural networks perform very well at image classification when trained with sufficient data. For tasks such as distinguishing between different objects, convolutional layers are very useful as they help to extract useful local features of the image (e.g ear shapes unique to dogs) which can then be fed to a dense neural network which deals with the global features.
 
-For this problem, clearly the most important objects in the images are:
+For this problem, clearly the **key objects** in the images are:
 * The pockets
 * The colored balls
 * The cue ball
 * The direction in which the cue stick is pointing in
 
-A CNN should have no problems detecting these objects. But for this particular classification problem, detecting these objects does us no good. It is the relative position of these objects with respect to each other that determines the success rate of the shot. 
+A CNN should have no problems detecting these objects. But for this particular classification problem, **detecting these objects does us no good**. It is the **relative position of these objects with respect to each other** that determines the success rate of the shot. 
 
 ## The bad news:
 
