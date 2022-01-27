@@ -66,6 +66,7 @@ For this problem, clearly the **key objects** in the images are:
 * The colored balls
 * The cue ball
 * The direction in which the cue stick is pointing in
+* The rails
 
 A CNN should have no problems detecting these objects. But for this particular classification problem, **detecting these objects does us no good**. It is the **relative position of these objects with respect to each other** that determines the success rate of the shot. 
 
