@@ -19,9 +19,9 @@ We want to build a machine learning model that can take in an image of particula
 
 A more technical description of the goals:
 * Designing and implementing a deep convolutional neural network (CNN) for distinguishing between "good" and "bad" positions in billiards.
-* Testing different CNN architectures in an attempt to overcome the domain specific problem of requiring a large effective receptive field size to capture important information such as the position of the object balls, cue ball, cue stick, pockets and rails relative to each other.
-* Visualizing the filters and feature maps to see if the model comes up with intuitive heuristics for prediction.
-* Using temperature scaling to calibrate the model so that the output can be interpreted as probabilities instead of just black and white classification.
+* Testing different CNN architectures in an attempt to overcome the domain specific problem of requiring a **large effective receptive field** size to capture important information such as the position of the object balls, cue ball, cue stick, pockets and rails relative to each other.
+* Visualizing the filters and feature maps to see if the model comes up with **intuitive heuristics for prediction**.
+* Using temperature scaling to calibrate the model so that the output can be **interpreted as probabilities** instead of just black and white classification.
 
 
 ## The raw data 
