@@ -15,7 +15,7 @@
 
 ## The problem and the goals
 
-We want to build a machine learning model that can take in an image (such as the ones shown above) as input, and then estimate the probability of potting a ball (Shooting the ball into one of the pockets). Convolutional neural networks (CNN) tend to perform very well on most image classification problems as they are optimized for picking up local features unique to an object such as the ears of a cat or the wheels on a vehicle. What is different and unique about this problem is that we have the same objects in all the training images. What differentiates the potting probability being high or low depends not on the objects in the image, but their relative positions. The aim is to design a procedure that will allow us to build a CNN that will perform well despite these difficulties. 
+We want to build a machine learning model that can take in an image (such as the ones shown above) as input, and then estimate the probability of potting a ball (Shooting the ball into one of the pockets). Convolutional neural networks (CNN) tend to perform very well on most image classification problems as they are optimized for picking up local features unique to an object such as the ears of a cat or the wheels on a vehicle. What is different and unique about this problem is that we have the same objects in all the training images. What differentiates the potting probability being high or low depends not on the objects in the image, but their **relative positions**. The aim is to design a procedure that will allow us to build a CNN that will perform well despite these difficulties. 
 
 Goals:
 * Designing and implementing a deep convolutional neural network (CNN) for distinguishing between "good" and "bad" positions in billiards.
