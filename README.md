@@ -84,7 +84,7 @@ A CNN should have no problems detecting these objects. But for this particular c
 * The images are all taken from the same angle, and for now we are not concerned with attempting to build a model which generalizes to images taken at other angles. This means slightly lower variation in the data.
 * There is a lot of “useless” information in the picture. Every pixel that is not one of the key objects is wasting computational power and making the problem unnecessarily complex. Image segmentation techniques allow us to remove all the “fluff” so that there is less irrelevant information which might help with training.
 
-## Some (additional) questions/ideas
+## Some (additional) questions/ideas for future projects
 
 * How can we tweak the CNN architecture to get better results? (Perhaps even surpass human performance?)
 * If performance is disappointing, is it due to a lack of training data? Or is there a better alternative to CNN’s for this task? (Hand engineering features?)
