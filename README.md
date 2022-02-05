@@ -13,13 +13,14 @@
 
 ## Background and motivation
 
-## Goals
+## The problem and the goals
 
-We want to build a machine learning model that can take in an image of particular situation on the pool table (right before the shot is made) as input, and then estimate the probability of making the shot from that position. At first glance, it seems like a straightforward image classification project, but I quickly realized that this problem has some very unique challenges which I discuss later.
+We want to build a machine learning model that can take in an image (such as the ones shown above) as input, and then estimate the probability of potting a ball (Shooting the ball into one of the pockets). Convolutional neural networks (CNN) tend to perform very well on most image classification problems as they are optimized for picking up local features unique to an object such as the ears of a cat or the wheels on a vehicle. What is different and unique about this problem is that we have the same objects in all the training images. What differentiates the potting probability being high or low depends not on the objects in the image, but their relative positions. The aim is to design a procedure that will allow us to build a CNN that will perform well despite these difficulties. 
 
-A more technical description of the goals:
+Goals:
 * Designing and implementing a deep convolutional neural network (CNN) for distinguishing between "good" and "bad" positions in billiards.
 * Testing different CNN architectures in an attempt to overcome the domain specific problem of requiring a **large effective receptive field** size to capture important information such as the position of the object balls, cue ball, cue stick, pockets and rails relative to each other.
+* Using image segmentation techniques to more easily achieve the above.
 * Visualizing the filters and feature maps to see if the model comes up with **intuitive heuristics for prediction**.
 * Using temperature scaling to calibrate the model so that the output can be **interpreted as probabilities** instead of just black and white classification.
 
@@ -79,9 +80,9 @@ A CNN should have no problems detecting these objects. But for this particular c
 ## The good news:
 
 * Designing a CNN architecture that prioritizes increasing the receptive field size of neurons (especially in the deeper layers) and at the same time not allowing the parameter space to grow too large might work, but a lot of experimentation and reading will be required.
-* It is possible that the convolutional layers might be able to pick out the key objects, and that the dense layer might be able to find some global heuristics that have good predictive power. For example, it might learn that when the cue ball is far from the other balls, there is a low chance of potting, or that if all the balls are close to the rails, there is a low chance of potting.
+* It is possible that the convolutional layers might be able to pick out the key patterns if we design a model that has a large receptive field size. At the very least, it might be able to detect common local patterns such as a ball hanging over a pocket, or a ball touching the rails.
 * The images are all taken from the same angle, and for now we are not concerned with attempting to build a model which generalizes to images taken at other angles. This means slightly lower variation in the data.
-* There is a lot of “useless” information in the picture. Every pixel that is not one of the key objects is wasting computational power and making the problem unnecessarily complex. If there were a way to remove all the “fluff” so that only the positions of the key objects remain, then we might improve our chances. Smart downsampling will be key. 
+* There is a lot of “useless” information in the picture. Every pixel that is not one of the key objects is wasting computational power and making the problem unnecessarily complex. Image segmentation techniques allow us to remove all the “fluff” so that there is less irrelevant information which might help with training.
 
 ## Some (additional) questions/ideas
 
