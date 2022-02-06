@@ -79,7 +79,7 @@ A CNN should have no problems detecting these objects. But for this particular c
 
 ## The good news:
 
-* Designing a CNN architecture that prioritizes increasing the receptive field size of neurons (especially in the deeper layers) and at the same time not allowing the parameter space to grow too large might work, but a lot of experimentation and reading will be required.
+* Designing a CNN architecture that prioritizes increasing the receptive field size of neurons (especially in the deeper layers) and at the same time not allowing the parameter space to grow too large might work, but a lot of research and experimentation will be required.
 * It is possible that the convolutional layers might be able to pick out the key patterns if we design a model that has a large receptive field size. At the very least, it might be able to detect common local patterns such as a ball hanging over a pocket, or a ball touching the rails.
 * The images are all taken from the same angle, and for now we are not concerned with attempting to build a model which generalizes to images taken at other angles. This means slightly lower variation in the data.
 * There is a lot of “useless” information in the picture. Every pixel that is not one of the key objects is wasting computational power and making the problem unnecessarily complex. Image segmentation techniques allow us to remove all the “fluff” so that there is less irrelevant information which might help with training.
