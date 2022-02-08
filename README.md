@@ -9,7 +9,7 @@
   <img src="https://github.com/Kaiaysez/Portfolio/blob/main/images/95%25%20Darkblue.png" width="400"> 
 </p>
 
-# NOTE: This project is a work in progress. Will update as more progress is made.
+# NOTE: This project is a work in progress. Will update and do a more in depth write-up as more progress is made.
 
 ## Background and motivation
 
