@@ -58,7 +58,7 @@ Every video recording, I followed the exact same procedures:
 9.Save the word documents as “Web page” and all the pictures will automatically be saved into    
  a file!!!
 
-## What is unique about this problem?:
+## What is unique about this problem?
 
 We know that convolutional neural networks perform very well at image classification when trained with sufficient data. For tasks such as distinguishing between different objects, convolutional layers are very useful as they help to extract useful local features of the image (e.g ear shapes unique to dogs) which can then be fed to a dense neural network which deals with the global features.
 
@@ -71,13 +71,13 @@ For this problem, clearly the **key objects** in the images are:
 
 A CNN should have no problems detecting these objects. But for this particular classification problem, **detecting these objects does us no good**. It is the **relative position of these objects with respect to each other** that determines the success rate of the shot. 
 
-## The bad news:
+## The bad news
 
 * Local features have almost no predictive power. This is the key difference between this problem, and say classifying cats and dogs. With cats and dogs, local features such as ear shapes have extremely high predictive power. In this case however, ALL of the predictive power comes from the global features, namely the relative position of the key objects.
 * The CNN has no understanding of the physics and dynamics of how these objects interact with each other. 
 * The training data might not be sufficient.
 
-## The good news:
+## The good news
 
 * Designing a CNN architecture that prioritizes increasing the receptive field size of neurons (especially in the deeper layers) and at the same time not allowing the parameter space to grow too large might work, but a lot of research and experimentation will be required.
 * It is possible that the convolutional layers might be able to pick out the key patterns if we design a model that has a large receptive field size. At the very least, it might be able to detect common local patterns such as a ball hanging over a pocket, or a ball touching the rails.
