@@ -9,7 +9,7 @@
   <img src="https://github.com/Kaiaysez/Portfolio/blob/main/images/95%25%20Darkblue.png" width="400"> 
 </p>
 
-# NOTE: This project is a work in progress and some of what I've written below is just for documentation purposes. A ipynb file of my code and some preliminary results are available. Once I am happy with everything, I will upload the final code file, do a writeup of the challenges faced, techniques used to overcome them, and lots of visualizations of the results.
+# NOTE: This project is a work in progress. Will update as more progress is made.
 
 ## Background and motivation
 
